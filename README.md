@@ -1,9 +1,9 @@
 # QUOTES
-   This is an application that a user can generate quotes.
+   This is an application that a user can generate quotes with.
 
-## USERNAME
+## BY
 
-  [Ko3ch]('htttps://github.com/Ko3ch')
+  [Ko3ch]('https://github.com/Ko3ch')
 
 ## TECHNOLOGIES USED
 
@@ -12,3 +12,5 @@
   - CSS
 
 ### Deployed App
+
+  https://github.com/Ko3ch
