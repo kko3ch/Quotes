@@ -1,0 +1,28 @@
+label{
+  font-weight: 600;
+}
+form{
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 80%;
+}
+textarea:hover{
+  border: 2px solid brown;
+}
+input:hover{
+  border: 2px solid brown;
+}
+.btn{
+  margin-left: 85%;
+  color:brown;
+  border: 1px solid black;
+}
+.btn:hover{
+  border: 2px solid brown;
+  color: black;
+}
+.alert{
+  background-color: transparent;
+  border: none;
+
+}

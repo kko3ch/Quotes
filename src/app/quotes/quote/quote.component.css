@@ -1,0 +1,50 @@
+.card{
+  margin-top: 50px;
+  padding: 5px;
+  height: auto;
+  width: 80%;
+}
+.card-header{
+  text-align: center;
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  font-size: 20px;
+}
+.card-body{
+  text-align: center;
+}
+.card-footer{
+  background-color:burlywood;
+}
+#q{
+  font-size: 50px;
+}
+#details{
+  font-size: 13px;
+  color: brown;
+  cursor: pointer;
+}
+#details:hover{
+  text-decoration: underline;
+}
+#delete{
+  margin-left: 20%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#delete:hover{
+  opacity: 0.5;
+}
+#upvote{
+  color: darkgreen;
+}
+#downvote{
+  color: red;
+}
+img{
+  cursor: pointer;
+}
+img:hover{
+  margin-top: 2px;
+}

@@ -1,0 +1,30 @@
+h1{
+  margin-top: 30px;
+  font-size: 50px;
+  padding: 5px;
+  color: sienna;
+  /* border: 2px solid brown; */
+  width: fit-content;
+  box-shadow: 10px slategrey;
+}
+h2{
+  padding: 5px;
+  text-decoration: underline;
+}
+.quote{
+  border-radius: 20px;
+  padding: 5px;
+  color: black;
+  background-color: sienna;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.flex-item{
+  width: 550px;
+}

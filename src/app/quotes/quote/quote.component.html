@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOsLuZv1foEetEPHGvrJjsf9CT4hdvB7aTRaK4KakagVw3gwpi&usqp=CAU" alt="" height="50px" width="50px">
+        {{ quote.quote }}
+      </p>
+    </div>
+    <div class="card-body">
+      <h3>-{{ quote.author }}-</h3>
+      <span id="details" (click)="onToggleDetails()">details</span>
+    </div>
+    <div class="card-footer">
+      <div class="container" *ngIf="showDetails">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container">
+              <div class="text-center">
+              <div class="row mt-2">
+                <div class="col-sm-6">
+                  <img (click)="addUpVotes" src="https://cdn.pixabay.com/photo/2013/07/13/10/27/hand-157251_960_720.png" alt="up" width="30px" height="30px" id="up">
+                </div>
+                <div class="col-sm-6">
+                  <img (click)="addDownVotes()"src="https://cdn.pixabay.com/photo/2013/07/13/10/27/dislike-157252_960_720.png" alt="down" width="30px" height="30px" id="down">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12">
+                    <p><span id="upvote">{{ quote.upvotes }}</span> | <span id="downvote">{{ quote.downvotes }}</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <small>Uploaded: <br><span style="font-family: monospace;">{{ quote.date | date }}</span></small>
+            <br>
+            <small class="flex-item">By: <br><span style="font-family: monospace;">{{ quote.publisher }}</span></small>
+          </div>
+          <div class="col-md-3">
+            <img (click)="quoteDelete(true)" id="delete"src="https://cdn.pixabay.com/photo/2017/02/23/08/46/garbage-2091534__340.png" alt="delete" width="50px" height="50px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

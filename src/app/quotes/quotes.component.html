@@ -1,0 +1,19 @@
+<h1><span class="quote">QUOTES</span>app</h1>
+<hr>
+<div class="row">
+  <div class="col-sm-6">
+    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>   
+  </div>
+  <div class="col-sm-6">
+    <app-quote [quote]="quotes[0]"></app-quote>
+  </div>
+</div>
+<hr>
+<div class="text-center">
+  <h2><span style="color: brown;"> My </span>Quotes</h2>
+</div>
+<div class="row">
+  <div class="flex-container wrap">
+      <app-quote *ngFor="let quote of quotes; let i = index" [quote]="quote" (isPlain)="deleteQuote($event, i)" class="flex-item"></app-quote>
+  </div>
+</div>
